@@ -1,0 +1,37 @@
+html {
+  background-color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.navbar {
+  background-color: #d40e0e;
+  height: auto;
+}
+
+.navbar .btn {
+  background-color: #d40e0e;
+}
+
+.navbar .burger {
+  width: 2em;
+  height: .2em;
+  background-color: #ffffff;
+  margin: .25em 0;
+  border-radius: .2em;
+}
+
+.navbar div {
+  background-color: #d40e0e;
+}
+
+.navbar input {
+  color: #e0d4e4;
+}
+
+.navbar label {
+  color: #e0d4e4;
+}
+/*# sourceMappingURL=style.css.map */
