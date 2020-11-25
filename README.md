@@ -1,4 +1,3 @@
-#base-template 
 
 Simple template with nav bar, burger menus and dark and light themes
 
