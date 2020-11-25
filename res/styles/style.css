@@ -1,37 +1,46 @@
+:root {
+    --theme-color-nav: rgb(213, 213, 213);
+    --theme-color-back: rgb(255, 255, 255);
+    --theme-color-keys: rgb(191, 191, 191);
+    --theme-color-keys-secondary: rgb(191, 191, 191);
+    --theme-color-text: rgb(0, 0, 0);
+    --theme-color-burger: rgb(64, 64, 64);
+}
+
 html {
-  background-color: #ffffff;
+    background: var(--theme-color-back);
 }
 
 body {
-  background-color: #ffffff;
+    background: var(--theme-color-back);
 }
 
 .navbar {
-  background-color: #d40e0e;
-  height: auto;
+    background: var(--theme-color-nav);
+    height: auto;
 }
 
 .navbar .btn {
-  background-color: #d40e0e;
+    background: var(--theme-color-nav);
 }
 
 .navbar .burger {
-  width: 2em;
-  height: .2em;
-  background-color: #ffffff;
-  margin: .25em 0;
-  border-radius: .2em;
+    width: 2em;
+    height: 0.2em;
+    background-color: var(--theme-color-burger);
+    margin: 0.25em 0;
+    border-radius: 0.2em;
 }
 
 .navbar div {
-  background-color: #d40e0e;
+    background-color: var(--theme-color-nav);
+    color: var(--theme-color-text);
 }
 
 .navbar input {
-  color: #e0d4e4;
+    color: var(--theme-color-text);
 }
 
 .navbar label {
-  color: #e0d4e4;
+    color: var(--theme-color-text);
 }
-/*# sourceMappingURL=style.css.map */
