@@ -1,5 +1,5 @@
 
-Simple template with nav bar, burger menus and dark and light themes
+This was mock-up I created to help guide me with the layout for my RPS app
 
 
-https://adamrohde.github.io/base-template/
+
