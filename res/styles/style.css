@@ -1,4 +1,12 @@
 :root {
+    --app-height: 100vh;
+    --button-height: 25vh;
+    --column-height: 75vh;
+
+    --center-columns-max: 60vh;
+
+    --app-height-max: 2000px;
+
     --theme-color-nav: rgb(213, 213, 213);
     --theme-color-back: rgb(255, 255, 255);
     --theme-color-keys: rgb(191, 191, 191);
@@ -7,6 +15,7 @@
     --theme-color-burger: rgb(64, 64, 64);
 }
 
+/*
 html {
     background: var(--theme-color-back);
 }
@@ -43,4 +52,135 @@ body {
 
 .navbar label {
     color: var(--theme-color-text);
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------------------------------------Main Main --------------------------------------- */
+.parent1-container {
+    height: var(--app-height);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------------------------Two main rows --------------------------------------- */
+.parent1-a {
+    background: white;
+    padding: 0px;
+    flex-grow: 1;
+}
+
+.parent1-b {
+    background: red;
+    padding: 0px;
+}
+
+/* ---------------------------------------Buttons parent --------------------------------------- */
+
+.parent1-b-grid {
+    padding: 0px;
+    min-height: var(--button-height);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* --------------------------------------- Buttons --------------------------------------- */
+/* Button 1  */
+.button-rock {
+    background-color: rgb(228, 81, 81);
+    display: grid;
+    place-items: center;
+}
+
+/* Button 2 */
+.button-paper {
+    background-color: seagreen;
+    display: grid;
+    place-items: center;
+}
+
+/* Button 3 */
+.button-scissors {
+    background-color: blueviolet;
+    display: grid;
+    place-items: center;
+}
+
+/* ---------------------------------------Score Columns --------------------------------------- */
+.parent1-a-grid {
+    display: grid;
+    height: var(--column-height);
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.human-score-column {
+    background-color: rgb(211, 211, 211);
+    display: grid;
+    align-self: end;
+    grid-template-rows: repeat(10, 30px);
+}
+.human-score-column > div {
+    margin: 4px;
+    background-color: rgb(255, 0, 0);
+}
+
+.computer-score-column {
+    background-color: rgb(211, 211, 211);
+    display: grid;
+    align-self: end;
+    grid-template-rows: repeat(10, 30px);
+}
+.computer-score-column > div {
+    margin: 4px;
+    background-color: rgb(255, 0, 0);
+}
+
+/* ---------------------------------------Three main rows in center main column --------------------------------------- */
+.column2-parent-a-grid {
+    padding: 0px;
+    height: var(--center-columns-max);
+    display: grid;
+    align-self: end;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.title-row {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.human-title {
+    display: grid;
+    place-items: center;
+}
+.computer-title {
+    display: grid;
+    place-items: center;
+}
+
+.battle-zone-row {
+    background-color: rgb(190, 38, 38);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.human-pick {
+    background-color: rgb(201, 186, 186);
+    display: grid;
+    place-items: center;
+    margin: 0.5em;
+}
+.computer-pick {
+    background-color: rgb(201, 186, 186);
+    display: grid;
+    place-items: center;
+    margin: 0.5em;
+}
+
+.game-status-row {
+    background-color: rgb(72, 255, 0);
+    display: grid;
+    place-items: center;
 }
